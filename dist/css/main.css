@@ -4,4 +4,183 @@
   margin: 0;
   padding: 0;
 }
+
+.blue {
+  color: #4285f4;
+}
+
+.red {
+  color: #ea4335;
+}
+
+.yellow {
+  color: #fbbc05;
+}
+
+.green {
+  color: #34a853;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  font-size: 13px;
+  font-weight: 400px;
+}
+
+.nav button {
+  background: #1a73e8;
+  color: white;
+  padding: 5px;
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 1em;
+}
+
+main {
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  margin: 15px;
+  display: block;
+  font-size: 80px;
+  letter-spacing: -8px;
+}
+
+main h1 span {
+  margin: 0;
+  padding: 0;
+}
+
+main input[name="search"] {
+  width: 500px;
+  height: 3em;
+  border-radius: 1em;
+}
+
+i {
+  margin: 10px;
+}
+
+.border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #cecece;
+  border-radius: 30px;
+  height: 45px;
+  width: 550px;
+}
+
+.border i {
+  font-weight: 100px;
+}
+
+.search-txt {
+  border: none;
+  outline: none;
+}
+
+.search-btns {
+  height: 80px;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-btns input[name="button"] {
+  margin: 20px;
+  padding: 5px;
+  border: none;
+  background-color: #efefef;
+  font-size: 13px;
+  font-weight: 400px;
+  width: 150px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 14px;
+  font-weight: 400px;
+  background-color: #efefef;
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  height: 80px;
+}
+
+.footer .first,
+.footer .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .first {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+input[name="button"]:hover,
+button:hover,
+i:hover,
+li:hover {
+  cursor: pointer;
+}
+
+#country {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
 /*# sourceMappingURL=main.css.map */

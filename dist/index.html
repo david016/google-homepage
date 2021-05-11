@@ -4,36 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
     <title></title>
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="nav">
         <li>Gmail</li>
-        <li>Pictures</li>
+        <li>Images</li>
         <li>Icon</li>
-        <li>Circle</li>
+        <li><button class="sign-in">Sign in</button></li>
       </ul>
     </nav>
     <main>
-      <h1>GOOGLE</h1>
-      <form action="">
-        <input type="text" name="search" id="search" />
-      </form>
+      <div>
+        <h1>
+          <span class="blue">G</span>
+          <span class="red">o</span>
+          <span class="yellow">o</span>
+          <span class="blue">g</span>
+          <span class="green">l</span>
+          <span class="red">e</span>
+        </h1>
+      </div>
+      <div class="search-box">
+        <form action="#">
+          <div class="border">
+            <i class="fas fa-search"></i>
+            <input type="text" name="search" class="search-txt" />
+            <i class="far fa-keyboard"></i>
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="search-btns">
+            <input type="button" name="button" value="Google search" />
+            <input type="button" name="button" value="I'm Feeling Lucky" />
+          </div>
+        </form>
+      </div>
     </main>
-
     <footer>
-      <div>Cesko</div>
-      <ul>
-        <li>O spolecnosti Google</li>
-        <li>Reklama</li>
-        <li>Firma</li>
-        <li>Jak funguje Vyhledavani</li>
-        <li>Uhlikove neutralni od roku 2007</li>
-        <li>Ochrana soukromi</li>
-        <li>Nastaveni</li>
-        <li>Smluvni podminky</li>
+      <!-- <hr /> -->
+      <ul class="footer">
+        <li id="country">Country</li>
+        <li>About</li>
+        <li>Advertising</li>
+        <li>Business</li>
+        <li>How Search works</li>
+        <li>Privacy Terms</li>
+        <li>Terms</li>
+        <li>Settings</li>
       </ul>
     </footer>
   </body>
