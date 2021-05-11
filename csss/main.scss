@@ -15,12 +15,11 @@
   }
   //   flex-direction: row;
 }
-ul {
-  list-style-type: none;
-}
 
-li {
+a {
   padding: 1em;
+  text-decoration: none;
+  color: black;
 }
 
 main {
@@ -99,21 +98,14 @@ i {
   position: fixed;
   bottom: 0px;
   height: 80px;
-  .first,
-  .second {
-    display: flex;
-  }
-  .first {
-    justify-content: space-around;
-  }
 }
 
 input[name="button"]:hover,
 button:hover,
 i:hover,
-li:hover {
-  cursor: pointer;
-}
+// a:hover {
+//   cursor: pointer;
+// }
 
 #country {
   position: fixed;

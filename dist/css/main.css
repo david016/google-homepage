@@ -43,12 +43,10 @@
   width: 100px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
+a {
   padding: 1em;
+  text-decoration: none;
+  color: black;
 }
 
 main {
@@ -159,25 +157,9 @@ i {
   height: 80px;
 }
 
-.footer .first,
-.footer .second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer .first {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 input[name="button"]:hover,
 button:hover,
 i:hover,
-li:hover {
-  cursor: pointer;
-}
-
 #country {
   position: fixed;
   bottom: 30px;
