@@ -1,4 +1,9 @@
 @import "config";
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .nav {
   display: flex;
@@ -27,8 +32,8 @@ main {
   h1 {
     margin: 15px;
     display: block;
-    font-size: 80px;
-    letter-spacing: -8px;
+    font-size: 70px;
+    letter-spacing: -7px;
     span {
       margin: 0;
       padding: 0;
@@ -57,9 +62,6 @@ i {
   border-radius: 30px;
   height: 42px;
   width: 550px;
-  i {
-    font-weight: 100px;
-  }
 }
 .search-txt {
   border: none;
@@ -76,7 +78,7 @@ i {
     border: none;
     background-color: rgb(239, 239, 239);
     font-size: 13px;
-    font-weight: 400px;
+    font-weight: 100px;
     width: 150px;
   }
 }
@@ -85,10 +87,11 @@ footer {
   width: 100vw;
   height: 100px;
   background: rgb(239, 239, 239);
-  position: fixed;
-  bottom: 0;
-  font-size: 14px;
-  font-weight: 400px;
+  // position: sticky;
+  // bottom: 0;
+  font-size: 13px;
+  font-weight: 100px;
+  margin-top: auto;
 
   .first_four {
     width: 50vw;
@@ -112,8 +115,8 @@ footer {
 .footer {
   display: flex;
   flex-direction: row;
-  position: fixed;
-  bottom: 0;
+  // position: sticky;
+  // bottom: 0;
 }
 
 input[name="button"]:hover,
@@ -155,27 +158,58 @@ a:hover {
   footer {
     .footer {
       flex-wrap: wrap;
+      width: 100vw;
     }
     .first_four {
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: none;
     }
     .last_three {
       width: 100vw;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
   .border {
-    width: 90vw;
+    width: 80vw;
+  }
+  input[name="search"] {
+    width: 75vw;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .search-btns {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  main h1 {
+    font-size: 25vw;
+  }
+  .border {
+    width: 75vw;
+  }
+  main input[name="search"] {
+    width: 60vw;
+  }
+  .fas {
+    margin: 0;
+  }
+  .fa-keyboard {
+    display: none;
+  }
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-height: 530px) {
-  footer,
-  .footer {
-    position: static;
+  main {
+    margin-top: 20px;
+  }
+  footer {
+    height: 80px;
   }
 }

@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .blue {
@@ -19,6 +20,17 @@
 
 .green {
   color: #34a853;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav {
@@ -65,8 +77,8 @@ main {
 main h1 {
   margin: 15px;
   display: block;
-  font-size: 80px;
-  letter-spacing: -8px;
+  font-size: 70px;
+  letter-spacing: -7px;
 }
 
 main h1 span {
@@ -105,10 +117,6 @@ i {
   width: 550px;
 }
 
-.border i {
-  font-weight: 100px;
-}
-
 .search-txt {
   border: none;
   outline: none;
@@ -131,7 +139,7 @@ i {
   border: none;
   background-color: #efefef;
   font-size: 13px;
-  font-weight: 400px;
+  font-weight: 100px;
   width: 150px;
 }
 
@@ -139,10 +147,9 @@ footer {
   width: 100vw;
   height: 100px;
   background: #efefef;
-  position: fixed;
-  bottom: 0;
-  font-size: 14px;
-  font-weight: 400px;
+  font-size: 13px;
+  font-weight: 100px;
+  margin-top: auto;
 }
 
 footer .first_four {
@@ -184,8 +191,6 @@ footer .last_three {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: fixed;
-  bottom: 0;
 }
 
 input[name="button"]:hover,
@@ -239,8 +244,12 @@ a:hover {
   footer .footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100vw;
   }
   footer .first_four {
+    display: none;
+  }
+  footer .last_three {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -251,24 +260,52 @@ a:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  footer .last_three {
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .border {
+    width: 80vw;
+  }
+  input[name="search"] {
+    width: 75vw;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-btns {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main h1 {
+    font-size: 25vw;
+  }
+  .border {
+    width: 75vw;
+  }
+  main input[name="search"] {
+    width: 60vw;
+  }
+  .fas {
+    margin: 0;
+  }
+  .fa-keyboard {
+    display: none;
+  }
+  .nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .border {
-    width: 90vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media screen and (max-height: 530px) {
-  footer,
-  .footer {
-    position: static;
+  main {
+    margin-top: 20px;
+  }
+  footer {
+    height: 80px;
   }
 }
 /*# sourceMappingURL=main.css.map */
