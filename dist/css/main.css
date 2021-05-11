@@ -158,8 +158,10 @@ i {
 }
 
 input[name="button"]:hover,
-button:hover,
-i:hover,
+button:hover {
+  cursor: pointer;
+}
+
 #country {
   position: fixed;
   bottom: 30px;

@@ -101,11 +101,9 @@ i {
 }
 
 input[name="button"]:hover,
-button:hover,
-i:hover,
-// a:hover {
-//   cursor: pointer;
-// }
+button:hover {
+  cursor: pointer;
+}
 
 #country {
   position: fixed;
