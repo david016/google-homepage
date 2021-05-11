@@ -13,21 +13,14 @@
     padding: 5px;
     width: 100px;
   }
-  //   flex-direction: row;
-}
-
-a {
-  padding: 1em;
-  text-decoration: none;
-  color: black;
 }
 
 main {
-  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 
   h1 {
     margin: 15px;
@@ -37,20 +30,20 @@ main {
     span {
       margin: 0;
       padding: 0;
-      // background-color: fuchsia;
     }
   }
   input[name="search"] {
     width: 500px;
-    height: 3em;
-    border-radius: 1em;
+    height: 40px;
   }
 }
 
-// input[name="search"]:focus {
-//   border: 2px solid blue;
-//   border-radius: 1em;
-// }
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 i {
   margin: 10px;
 }
@@ -60,7 +53,7 @@ i {
   align-items: center;
   border: 1px solid rgb(206, 206, 206);
   border-radius: 30px;
-  height: 45px;
+  height: 42px;
   width: 550px;
   i {
     font-weight: 100px;
@@ -72,7 +65,6 @@ i {
 }
 .search-btns {
   height: 80px;
-  // padding: 20px;
   margin: 15px;
   display: flex;
   justify-content: center;
@@ -86,27 +78,82 @@ i {
     width: 150px;
   }
 }
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background: rgb(239, 239, 239);
+  position: fixed;
+  bottom: 0;
+  font-size: 14px;
+  font-weight: 400px;
+
+  .first_four {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .last_three {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+}
+.country {
+  line-height: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  font-size: 14px;
-  font-weight: 400px;
-  background-color: rgb(239, 239, 239);
-  width: 100vw;
   position: fixed;
-  bottom: 0px;
-  height: 80px;
+  bottom: 0;
 }
 
 input[name="button"]:hover,
+i:hover,
 button:hover {
   cursor: pointer;
 }
 
-#country {
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
+@media screen and (max-width: 1000px) {
+  footer {
+    height: 120px;
+    .first_four {
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+    }
+    .last_three {
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    .footer {
+      flex-wrap: wrap;
+    }
+    .first_four {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .last_three {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .border {
+    width: 90vw;
+  }
 }
